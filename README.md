@@ -6,13 +6,12 @@ Minimal web scraper and push notifier for new messages on the Prohardver! forums
 How to use:
 -----------
 
-0. Install git and Node.js on your target system.
-1. Clone this repository.
+1. Clone this repository to your target system.
 2. Run 'npm install' to install dependencies.
 3. Copy `config.example.js` to `config.js` _(or try to run the application)_
 3. Set your Prohardver! and PushBullet credentials in `config.js`.
 4. _(Optional)_ Set message format and polling interval.
-5. Run with `node index.js` or forever.
+5. Run with `node index.js`.
 
 Configuration File:
 -------------------
@@ -25,8 +24,8 @@ var Configuration = {
             'username': 'Your Prohardver username',   // !!! Fill it
             'password': 'Your Prohardver password',   // !!! Fill it
             'checkInterval': 10,                      // in minutes
-            'format': 'list',                         // count, list or urls
-            'notifyTo': 'all'                         // not implemented yet
+            'format': 'list',                         // count or list
+            'notifyTo': 'all'                         // not implementes yet
         }
     ],
     PushBulletApiKey: 'Your PushBullet API key'       // !!! Fill it
@@ -37,8 +36,7 @@ Example:
 --------
 
 ```
-> git clone https://github.com/vzsg/prohardver-push-notifier.git
-> cd prohardver-push-notifier
+> git clone https://github.com/Yitsushi/prohardver-push-notifier.git
 > npm install
 > cp config.example.js config.js
 
